@@ -1,0 +1,36 @@
+version: '3.9'
+
+
+services:
+  go-app:
+    container_name: go-app
+    image: hazimemam60/go-app:1.0
+    build: ./Clinic-Reservation-System
+    environment:
+      DB_URL: "host=go_db user=postgres password=2362 dbname=clinicreservationsystem port=5432"
+    ports:
+      - "4000:4000"
+    depends_on: 
+      - go_db
+  go_db:
+    container_name: go_db
+    image: postgres:16.0
+    environment:
+      POSTGRES_PASSWORD: 2362
+      POSTGRES_USER: postgres
+      POSTGRES_DB: clinicreservationsystem
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  react-app:
+    container_name: react-app
+    build: ./front_end_project
+    ports:
+      - "3000:3000"
+    depends_on:
+      - go-app
+
+
+volumes:
+  pgdata: {}

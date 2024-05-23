@@ -1,0 +1,13 @@
+->> id is primary key in every table
+
+Doctor(id , name , mail , password)
+Slot(id , date , hour , doctor_id)  
+Appointment(id , doctor id , slot id , patient_id)
+Patient(id , name , mail, password )
+
+
+RELATIONS:
+Doctor -> slot ,	 one to many
+Appoitment -> doctor	 one to one
+Appoitment -> slot	 one to one
+Patient -> appointment   one to many

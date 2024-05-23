@@ -1,0 +1,62 @@
+.DoctorContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .DoctorSlots {
+    margin-bottom: 20px;
+  }
+  
+  .DoctorSlots ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .DoctorSlots li {
+    margin-bottom: 8px;
+  }
+  
+  .AddSlotForm {
+    margin-top: 20px;
+  }
+  
+  .AddSlotForm label {
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .AddSlotForm input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .AddSlotForm button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .AddSlotForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  .LogoutButton {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .LogoutButton:hover {
+    background-color: #c82333;
+  }
+  

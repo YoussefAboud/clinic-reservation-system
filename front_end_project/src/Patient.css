@@ -1,0 +1,71 @@
+.PatientContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .SelectDropdown {
+    margin-bottom: 20px;
+  }
+  
+  .ActionsButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .ActionsButtons button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ActionsButtons button.delete-button {
+    background-color: #dc3545;
+  }
+  
+  .ActionsButtons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .PatientAppointmentsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .PatientAppointmentsTable th,
+  .PatientAppointmentsTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .PatientAppointmentsTable th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .PatientAppointmentsTable tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .PatientAppointmentsTable button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .PatientAppointmentsTable button:hover {
+    background-color: #0056b3;
+  }
+  

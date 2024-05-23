@@ -1,0 +1,6 @@
+FROM postgres:latest
+ENV POSTGRES_DB clinicreservationsystem
+ENV POSTGRES_USER postgres
+ENV POSTGRES_PASSWORD 2362
+ENV PORT 5432
+EXPOSE $PORT
